@@ -22,5 +22,11 @@ public class HelloController {
         PersonDetails personDetails = (PersonDetails) authentication.getPrincipal();
         log.info("Person info: {}", personDetails.getPerson());
         return "hello";
+
+    }
+
+    @GetMapping("/admin")
+    public String adminPage() {
+        return "admin";
     }
 }
