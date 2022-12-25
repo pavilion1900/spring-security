@@ -14,3 +14,5 @@ spring:
     open-in-view: false
 
 logging.file.path: src/main/resources/log
+
+jwt_secret: SECRET
